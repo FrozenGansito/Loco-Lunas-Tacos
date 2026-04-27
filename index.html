@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loco Lunas Tacos | Taco Truck</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+ 
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Loco Lunas Tacos</a>
+<ul class="nav-links" id="navLinks">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#find-us">Find Us</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Authentic Street Tacos</p>
+      <img src="gallery/logo.png" alt="Loco Lunas Tacos Logo" class="hero-logo" />
+      <p class="hero-sub">Bold flavors. Fire-grilled meats. Zero regrets.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-primary">See Our Menu</a>
+        <a href="#find-us" class="btn btn-outline">Find the Truck</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">&#8595; scroll</div>
+  </section>
+
+
+  <!-- MENU -->
+  <section id="menu">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">What We're Serving</p>
+        <h2>The Menu</h2>
+        <p class="section-sub">Everything made to order. Every bite worth it.</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-tab="tacos">Tacos</button>
+        <button class="tab-btn" data-tab="sides">Sides & Drinks</button>
+        <button class="tab-btn" data-tab="specials">Daily Specials</button>
+      </div>
+
+      <!-- TACOS -->
+      <div class="menu-grid active" id="tacos">
+        <div class="menu-card">
+          <div class="menu-card-img" style="background:#f97316"><img src="gallery/carneasada.jpg" alt="Carne Asada"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Carne Asada</h3>
+              <span class="price">$3.50</span>
+            </div>
+            <p>Grilled skirt steak, fresh cilantro, white onion, lime, salsa verde.</p>
+            <span class="tag">Fan Favorite</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background:#ef4444"><img src="gallery/alpastor.jpg" alt="Al Pastor"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Al Pastor</h3>
+              <span class="price">$3.50</span>
+            </div>
+            <p>Marinated pork with pineapple, onion, cilantro, and tomatillo salsa.</p>
+            <span class="tag">Most Popular</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background:#22c55e"><img src="gallery/bajafish.jpg" alt="Baja Fish"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Baja Fish</h3>
+              <span class="price">$4.00</span>
+            </div>
+            <p>Beer-battered tilapia, cabbage slaw, crema, pico de gallo, chipotle mayo.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background:#a855f7"><img src="gallery/mushroom.jpg" alt="Mushroom & Black Bean"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Mushroom &amp; Black Bean</h3>
+              <span class="price">$3.25</span>
+            </div>
+            <p>Sautéed mushrooms, seasoned black beans, avocado crema, pickled jalapeños.</p>
+            <span class="tag tag-green">Vegan</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background:#f59e0b"><img src="gallery/polloasado.jpg" alt="Pollo Asado"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Pollo Asado</h3>
+              <span class="price">$3.50</span>
+            </div>
+            <p>Citrus-marinated grilled chicken, salsa roja, cotija cheese, fresh lime.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background:#ec4899"><img src="gallery/carnitas.jpg" alt="Carnitas"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Carnitas</h3>
+              <span class="price">$3.50</span>
+            </div>
+            <p>Slow-braised pork, crispy bits, diced onion, cilantro, two salsas.</p>
+            <span class="tag">Slow-Cooked</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SIDES & DRINKS -->
+      <div class="menu-grid" id="sides">
+        <div class="menu-card">
+          <div class="menu-card-img" style="background:#facc15"><img src="gallery/elote cup.jpg" alt="Elote Cup"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Elote Cup</h3>
+              <span class="price">$3.00</span>
+            </div>
+            <p>Grilled corn, mayo, cotija, chili powder, lime juice.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background:#84cc16"><img src="gallery/guac-chips.jpg" alt="Guacamole & Chips"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Guacamole &amp; Chips</h3>
+              <span class="price">$4.00</span>
+            </div>
+            <p>House-made guac with chunky tomato, jalapeño, fresh lime, crispy chips.</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background:#0ea5e9"><img src="gallery/agua-frescas.jpg" alt="Agua Fresca"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Agua Fresca</h3>
+              <span class="price">$2.50</span>
+            </div>
+            <p>Rotating flavors: Hibiscus, Horchata, Tamarind. Ask us what's fresh!</p>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img" style="background:#fb923c"><img src="gallery/birria.jpg" alt="Birria Consomé"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Birria Consomé</h3>
+              <span class="price">$3.00</span>
+            </div>
+            <p>Rich, slow-simmered beef broth. Perfect for dipping your quesabirria.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SPECIALS -->
+      <div class="menu-grid" id="specials">
+        <div class="menu-card featured">
+          <div class="menu-card-img" style="background:#dc2626"><img src="gallery/quesadilla.jpg" alt="Quesabirria Tacos"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Quesabirria Tacos</h3>
+              <span class="price">$5.00</span>
+            </div>
+            <p>Crispy quesadilla-style taco filled with slow-cooked birria beef, melted Oaxacan cheese, served with consomé for dipping. Limited quantity daily!</p>
+            <span class="tag tag-red">Limited Daily</span>
+          </div>
+        </div>
+        <div class="menu-card featured">
+          <div class="menu-card-img" style="background:#7c3aed"><img src="gallery/3tacos.jpg" alt="Taco Combo"></div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3>Taco Combo (3 tacos)</h3>
+              <span class="price">$10.00</span>
+            </div>
+            <p>Pick any 3 tacos from our classic menu. Includes one Agua Fresca. Best deal on the block.</p>
+            <span class="tag">Best Value</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FIND US -->
+  <section id="find-us">
+    <div class="container">
+      <div class="section-header light">
+        <p class="eyebrow">We Move Around</p>
+        <h2>Find the Truck</h2>
+        <p class="section-sub">Follow us on Instagram for real-time location updates.</p>
+      </div>
+      <div class="schedule-grid">
+        <div class="schedule-card">
+          <div class="day">Mon – Tue</div>
+          <div class="location">
+            <strong>Closed</strong>
+            <span>Taking a breather</span>
+          </div>
+          <div class="hours closed">Closed</div>
+        </div>
+        <div class="schedule-card">
+          <div class="day">Wednesday</div>
+          <div class="location">
+            <strong>Riverside Park</strong>
+            <span>123 River Rd, near the east entrance</span>
+          </div>
+          <div class="hours">11 AM – 7 PM</div>
+        </div>
+        <div class="schedule-card">
+          <div class="day">Thursday</div>
+          <div class="location">
+            <strong>Downtown Lot</strong>
+            <span>5th &amp; Main, corner parking lot</span>
+          </div>
+          <div class="hours">11 AM – 8 PM</div>
+        </div>
+        <div class="schedule-card today">
+          <div class="day">Friday <span class="today-badge">Today</span></div>
+          <div class="location">
+            <strong>Eastside Brewery</strong>
+            <span>789 Craft Ave, patio parking</span>
+          </div>
+          <div class="hours">5 PM – 10 PM</div>
+        </div>
+        <div class="schedule-card">
+          <div class="day">Saturday</div>
+          <div class="location">
+            <strong>Farmers Market</strong>
+            <span>Central Plaza, vendor row B</span>
+          </div>
+          <div class="hours">9 AM – 2 PM</div>
+        </div>
+        <div class="schedule-card">
+          <div class="day">Sunday</div>
+          <div class="location">
+            <strong>Sunset Beach Lot</strong>
+            <span>Ocean Blvd &amp; 3rd, near the lifeguard station</span>
+          </div>
+          <div class="hours">Noon – 7 PM</div>
+        </div>
+      </div>
+      <p class="schedule-note">Schedule subject to change. Follow <a href="#contact">@locolunatacos</a> for live updates!</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-inner">
+      <div class="about-img">
+        <div class="about-img-placeholder">
+          <img src="gallery/logo.png" alt="Loco Lunas Tacos Logo" style="width:100%;height:100%;object-fit:contain;" />
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="eyebrow">Our Story</p>
+        <h2>Family Recipes.<br />Street-Level Love.</h2>
+        <p>Loco Lunas Tacos started in 2018 when cousins Marco and Diego decided their family's Oaxacan recipes were too good to stay in the kitchen. What began as a weekend pop-up became a city staple, known for long lines, loud music, and tacos that keep people coming back.</p>
+        <p>Every tortilla is pressed by hand. Every marinade is made from scratch. We source our produce from local farms and our chiles from the same importers our grandmother used.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">6+</span>
+            <span class="stat-label">Years Rolling</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">20k+</span>
+            <span class="stat-label">Tacos Served</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">4.9★</span>
+            <span class="stat-label">Avg Rating</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Word on the Street</p>
+        <h2>People Are Talking</h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Best al pastor I've had outside of Birmingham. The pineapple is perfect. I drove 45 minutes just for these tacos."</p>
+          <div class="reviewer">— Sofia R., Yelp</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"The quesabirria is absolutely unreal. We got there at 6pm and they were almost sold out. Show up early, seriously."</p>
+          <div class="reviewer">— James T., Google</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"As a vegan I thought I'd just grab a side dish, but the mushroom black bean taco is genuinely one of the best things I've ever eaten."</p>
+          <div class="reviewer">— Priya M., Instagram</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / SOCIAL -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header light">
+        <p class="eyebrow">Get in Touch</p>
+        <h2>Stay Connected</h2>
+        <p class="section-sub">Follow us for live location drops, secret menu items, and taco-themed chaos.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <div>
+              <strong>Phone / Text</strong>
+              <a href="tel:+15551234567">(555) 123-4567</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:hola@locolunatacos.com">hola@locolunatacos.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🎉</span>
+            <div>
+              <strong>Catering & Events</strong>
+              <p>We do private events, weddings, corporate lunches, and more. Reach out!</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn">Instagram</a>
+            <a href="#" class="social-btn">TikTok</a>
+            <a href="#" class="social-btn">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Loco Lunas Tacos</span>
+        <p>Rolling through the streets since 2018.<br />Handmade. Fire-grilled. Always fresh.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#menu">Menu</a>
+        <a href="#find-us">Find Us</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Loco Lunas Tacos. Made with 🌶 and a lot of love.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
